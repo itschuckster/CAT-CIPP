@@ -136,7 +136,12 @@ const ApplyStandard = () => {
               .map((item, key) => (
                 <>
                   <CCol>
-                    <RFFCFormSwitch key={key} name={item.name} label={item.label} />
+                    <RFFCFormSwitch
+                      key={key}
+                      name={item.name}
+                      label={item.label}
+                      helpText={item.helpText}
+                    />
                     {item.addedComponent && (
                       <Condition when={item.name} is={true}>
                         {item.addedComponent.type === 'Select' ? (
@@ -164,7 +169,7 @@ const ApplyStandard = () => {
         <hr className="my-4" />
       </CippWizard.Page>
       <CippWizard.Page
-        title="Azure AD Standards"
+        title="Entra ID Standards"
         description="Select which standards you want to apply."
       >
         <center>
@@ -179,7 +184,12 @@ const ApplyStandard = () => {
               .map((item, key) => (
                 <>
                   <CCol>
-                    <RFFCFormSwitch key={key} name={item.name} label={item.label} />
+                    <RFFCFormSwitch
+                      key={key}
+                      name={item.name}
+                      label={item.label}
+                      helpText={item.helpText}
+                    />
                     {item.addedComponent && (
                       <Condition when={item.name} is={true}>
                         {item.addedComponent.type === 'Select' ? (
@@ -222,7 +232,12 @@ const ApplyStandard = () => {
               .map((item, key) => (
                 <>
                   <CCol>
-                    <RFFCFormSwitch key={key} name={item.name} label={item.label} />
+                    <RFFCFormSwitch
+                      key={key}
+                      name={item.name}
+                      label={item.label}
+                      helpText={item.helpText}
+                    />
                     {item.addedComponent && (
                       <Condition when={item.name} is={true}>
                         {item.addedComponent.type === 'Select' ? (
@@ -265,7 +280,12 @@ const ApplyStandard = () => {
               .map((item, key) => (
                 <>
                   <CCol>
-                    <RFFCFormSwitch key={key} name={item.name} label={item.label} />
+                    <RFFCFormSwitch
+                      key={key}
+                      name={item.name}
+                      label={item.label}
+                      helpText={item.helpText}
+                    />
                     {item.addedComponent && (
                       <Condition when={item.name} is={true}>
                         {item.addedComponent.type === 'Select' ? (
@@ -308,7 +328,12 @@ const ApplyStandard = () => {
               .map((item, key) => (
                 <>
                   <CCol>
-                    <RFFCFormSwitch key={key} name={item.name} label={item.label} />
+                    <RFFCFormSwitch
+                      key={key}
+                      name={item.name}
+                      label={item.label}
+                      helpText={item.helpText}
+                    />
                     {item.addedComponent && (
                       <Condition when={item.name} is={true}>
                         {item.addedComponent.type === 'Select' ? (
