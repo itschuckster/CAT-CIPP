@@ -74,6 +74,10 @@
       "route": "/tenant/standards/*",
       "allowedRoles": ["admin"]
     },
+	  {
+      "route": "/tenant/administration/gdap*",
+      "allowedRoles": ["editor"]
+    },
     {
       "route": "/",
       "allowedRoles": ["admin", "editor", "readonly", "reader", "authenticated", "anonymous"]
