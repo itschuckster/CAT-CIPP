@@ -4,17 +4,14 @@ const config = {
   images: {
     unoptimized: true,
   },
-  output: "export", // Ensures Next.js exports static files
+  output: "export",
   webpack(config) {
     config.module.rules.push({
       test: /\.svg$/,
       use: ["@svgr/webpack"],
     });
     return config;
-  },
-  async redirects() {
-    return [];
-  },
+  }
 };
 
 module.exports = config;
